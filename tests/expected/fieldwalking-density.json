@@ -1,0 +1,9 @@
+[
+  {
+    "fact_id": "transect-12",
+    "tract": "east",
+    "survey_m2": 400,
+    "finds": 6,
+    "finds_per_hectare": 150
+  }
+]

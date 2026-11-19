@@ -1,0 +1,14 @@
+{
+  "records": [
+    {
+      "id": "pot-1",
+      "context": "C7",
+      "rim": true
+    },
+    {
+      "id": "pot-2",
+      "context": "C7",
+      "rim": false
+    }
+  ]
+}

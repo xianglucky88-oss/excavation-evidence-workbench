@@ -1,0 +1,17 @@
+{
+  "records": [
+    {
+      "id": "rel-3",
+      "earlier": "ground-A",
+      "later": "fill-B"
+    }
+  ],
+  "deposits": [
+    {
+      "id": "fill-B"
+    },
+    {
+      "id": "ground-A"
+    }
+  ]
+}

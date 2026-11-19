@@ -1,0 +1,20 @@
+{
+  "records": [
+    {
+      "id": "specimen-10",
+      "measured_bp": 4450
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "r1",
+      "reference_bp": 4438,
+      "calendar_bp": 5050
+    },
+    {
+      "id": "r2",
+      "reference_bp": 4479,
+      "calendar_bp": 5090
+    }
+  ]
+}

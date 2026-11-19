@@ -1,0 +1,14 @@
+[
+  {
+    "fact_id": "ground-A",
+    "level": 0,
+    "earlier_relation_ids": []
+  },
+  {
+    "fact_id": "fill-B",
+    "level": 1,
+    "earlier_relation_ids": [
+      "rel-3"
+    ]
+  }
+]

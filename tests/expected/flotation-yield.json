@@ -1,0 +1,9 @@
+[
+  {
+    "fact_id": "sample-8-light",
+    "fraction": "light",
+    "processed_liters": 8,
+    "count": 14,
+    "seeds_per_liter": 1.75
+  }
+]
