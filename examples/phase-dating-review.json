@@ -1,0 +1,147 @@
+{
+  "trenches": [
+    {
+      "id": "T1"
+    },
+    {
+      "id": "T2"
+    }
+  ],
+  "deposits": [
+    {
+      "id": "ground-A",
+      "trench": "T1"
+    },
+    {
+      "id": "pit-fill-B",
+      "trench": "T1"
+    },
+    {
+      "id": "older-C0",
+      "trench": "T2"
+    },
+    {
+      "id": "layer-C",
+      "trench": "T2"
+    }
+  ],
+  "relations": [
+    {
+      "id": "rel-3",
+      "earlier": "ground-A",
+      "later": "pit-fill-B",
+      "state": "confirmed"
+    },
+    {
+      "id": "rel-9",
+      "earlier": "pit-fill-B",
+      "later": "ground-A",
+      "state": "confirmed"
+    }
+  ],
+  "specimens": [
+    {
+      "id": "sample-1",
+      "deposit": "pit-fill-B",
+      "field_attribution": "ambiguous",
+      "origin": "ground-A",
+      "measured_bp": 4200,
+      "tolerance_bp": 100
+    },
+    {
+      "id": "sample-2",
+      "deposit": "ground-A",
+      "field_attribution": "in-situ",
+      "measured_bp": 4800,
+      "tolerance_bp": 60
+    },
+    {
+      "id": "sample-3",
+      "deposit": "layer-C",
+      "field_attribution": "ambiguous",
+      "origin": "older-C0",
+      "measured_bp": 5200,
+      "tolerance_bp": 50
+    }
+  ],
+  "reference_points": [
+    {
+      "id": "rp-01",
+      "reference_bp": 3800,
+      "calendar_bp": 4150
+    },
+    {
+      "id": "rp-02",
+      "reference_bp": 4100,
+      "calendar_bp": 4250
+    },
+    {
+      "id": "rp-03",
+      "reference_bp": 4600,
+      "calendar_bp": 4350
+    },
+    {
+      "id": "rp-04",
+      "reference_bp": 4250,
+      "calendar_bp": 4450
+    },
+    {
+      "id": "rp-05",
+      "reference_bp": 4150,
+      "calendar_bp": 4550
+    },
+    {
+      "id": "rp-06",
+      "reference_bp": 4700,
+      "calendar_bp": 4700
+    },
+    {
+      "id": "rp-06b",
+      "reference_bp": 4780,
+      "calendar_bp": 4750
+    },
+    {
+      "id": "rp-06c",
+      "reference_bp": 4850,
+      "calendar_bp": 4800
+    },
+    {
+      "id": "rp-07",
+      "reference_bp": 5000,
+      "calendar_bp": 4800
+    },
+    {
+      "id": "rp-08",
+      "reference_bp": 5300,
+      "calendar_bp": 4950
+    },
+    {
+      "id": "rp-09",
+      "reference_bp": 5500,
+      "calendar_bp": 5100
+    },
+    {
+      "id": "rp-10",
+      "reference_bp": 5200,
+      "calendar_bp": 5300
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev-1",
+      "target_kind": "relation",
+      "target": "rel-9",
+      "action": "withdraw",
+      "resolution": "withdrawn",
+      "note": "复核员确认 rel-9 为误记，坑切地面方向以 rel-3 为准"
+    },
+    {
+      "id": "rev-2",
+      "target_kind": "specimen",
+      "target": "sample-3",
+      "action": "correct-attribution",
+      "resolution": "reworked",
+      "note": "复核判定 sample-3 系从 older-C0 卷入 layer-C"
+    }
+  ]
+}

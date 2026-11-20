@@ -14,7 +14,7 @@ ROOT = Path(__file__).resolve().parent.parent
 
 class BaselineTests(unittest.TestCase):
     def test_all_pipeline_outputs(self):
-        self.assertEqual(len(PIPELINES), 5)
+        self.assertEqual(len(PIPELINES), 6)
         for name in PIPELINES:
             with self.subTest(pipeline=name):
                 source = json.loads((ROOT / "examples" / f"{name}.json").read_text(encoding="utf-8"))

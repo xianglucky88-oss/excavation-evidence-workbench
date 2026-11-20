@@ -1,0 +1,351 @@
+[
+  {
+    "fact_id": "ground-A",
+    "kind": "phase-review",
+    "trench_id": "T1",
+    "component_id": "component-1",
+    "level": 0,
+    "earlier_relation_ids": [],
+    "later_relation_ids": [
+      "rel-3"
+    ],
+    "specimen_ids": [
+      "sample-1",
+      "sample-2"
+    ],
+    "direct_constraints": [
+      {
+        "specimen_id": "sample-2",
+        "attribution": "in-situ",
+        "segments": [
+          {
+            "reference_point_ids": [
+              "rp-06b",
+              "rp-06c"
+            ],
+            "reference_bp_range": [
+              4780.0,
+              4850.0
+            ],
+            "calendar_bp_range": [
+              4750.0,
+              4800.0
+            ]
+          }
+        ]
+      }
+    ],
+    "residual_old_layer_constraints": [],
+    "ambiguous_specimen_ids": [],
+    "calendar_bp_envelope": [
+      4750.0,
+      4800.0
+    ],
+    "conflict_ids": [],
+    "support": "supported"
+  },
+  {
+    "fact_id": "layer-C",
+    "kind": "phase-review",
+    "trench_id": "T2",
+    "component_id": "component-2",
+    "level": 0,
+    "earlier_relation_ids": [],
+    "later_relation_ids": [],
+    "specimen_ids": [
+      "sample-3"
+    ],
+    "direct_constraints": [],
+    "residual_old_layer_constraints": [
+      {
+        "specimen_id": "sample-3",
+        "origin": "older-C0",
+        "segments": [
+          {
+            "reference_point_ids": [
+              "rp-10"
+            ],
+            "reference_bp_range": [
+              5200.0,
+              5200.0
+            ],
+            "calendar_bp_range": [
+              5300.0,
+              5300.0
+            ]
+          }
+        ]
+      }
+    ],
+    "ambiguous_specimen_ids": [],
+    "calendar_bp_envelope": null,
+    "conflict_ids": [],
+    "support": "supported"
+  },
+  {
+    "fact_id": "older-C0",
+    "kind": "phase-review",
+    "trench_id": "T2",
+    "component_id": "component-3",
+    "level": 0,
+    "earlier_relation_ids": [],
+    "later_relation_ids": [],
+    "specimen_ids": [
+      "sample-3"
+    ],
+    "direct_constraints": [
+      {
+        "specimen_id": "sample-3",
+        "attribution": "reworked",
+        "segments": [
+          {
+            "reference_point_ids": [
+              "rp-10"
+            ],
+            "reference_bp_range": [
+              5200.0,
+              5200.0
+            ],
+            "calendar_bp_range": [
+              5300.0,
+              5300.0
+            ]
+          }
+        ]
+      }
+    ],
+    "residual_old_layer_constraints": [],
+    "ambiguous_specimen_ids": [],
+    "calendar_bp_envelope": [
+      5300.0,
+      5300.0
+    ],
+    "conflict_ids": [],
+    "support": "supported"
+  },
+  {
+    "fact_id": "pit-fill-B",
+    "kind": "phase-review",
+    "trench_id": "T1",
+    "component_id": "component-1",
+    "level": 1,
+    "earlier_relation_ids": [
+      "rel-3"
+    ],
+    "later_relation_ids": [],
+    "specimen_ids": [
+      "sample-1"
+    ],
+    "direct_constraints": [],
+    "residual_old_layer_constraints": [],
+    "ambiguous_specimen_ids": [
+      "sample-1"
+    ],
+    "calendar_bp_envelope": null,
+    "conflict_ids": [],
+    "support": "supported"
+  },
+  {
+    "fact_id": "rev-1",
+    "kind": "review-change",
+    "target_kind": "relation",
+    "target_id": "rel-9",
+    "action": "withdraw",
+    "resolution": "withdrawn",
+    "note": "复核员确认 rel-9 为误记，坑切地面方向以 rel-3 为准",
+    "changes": [
+      {
+        "deposit_id": "ground-A",
+        "prior_level": null,
+        "current_level": 0,
+        "prior_calendar_bp_envelope": [
+          4750.0,
+          4800.0
+        ],
+        "current_calendar_bp_envelope": [
+          4750.0,
+          4800.0
+        ],
+        "prior_conflict_ids": [
+          "conflict:cycle:component-1"
+        ],
+        "current_conflict_ids": []
+      },
+      {
+        "deposit_id": "pit-fill-B",
+        "prior_level": null,
+        "current_level": 1,
+        "prior_calendar_bp_envelope": null,
+        "current_calendar_bp_envelope": null,
+        "prior_conflict_ids": [
+          "conflict:cycle:component-1"
+        ],
+        "current_conflict_ids": []
+      }
+    ],
+    "evidence_basis": [
+      "rev-1",
+      "rel-9"
+    ]
+  },
+  {
+    "fact_id": "rev-2",
+    "kind": "review-change",
+    "target_kind": "specimen",
+    "target_id": "sample-3",
+    "action": "correct-attribution",
+    "resolution": "reworked",
+    "note": "复核判定 sample-3 系从 older-C0 卷入 layer-C",
+    "changes": [
+      {
+        "deposit_id": "older-C0",
+        "prior_level": 0,
+        "current_level": 0,
+        "prior_calendar_bp_envelope": null,
+        "current_calendar_bp_envelope": [
+          5300.0,
+          5300.0
+        ],
+        "prior_conflict_ids": [],
+        "current_conflict_ids": []
+      }
+    ],
+    "evidence_basis": [
+      "rev-2",
+      "sample-3"
+    ]
+  },
+  {
+    "fact_id": "sample-1",
+    "kind": "specimen-calibration",
+    "deposit_id": "pit-fill-B",
+    "field_attribution": "ambiguous",
+    "effective_attribution": "ambiguous",
+    "measured_bp": 4200.0,
+    "tolerance_bp": 100.0,
+    "allowed_reference_bp": [
+      4100.0,
+      4300.0
+    ],
+    "calibration_status": "calibrated",
+    "segments": [
+      {
+        "reference_point_ids": [
+          "rp-02"
+        ],
+        "reference_bp_range": [
+          4100.0,
+          4100.0
+        ],
+        "calendar_bp_range": [
+          4250.0,
+          4250.0
+        ]
+      },
+      {
+        "reference_point_ids": [
+          "rp-04",
+          "rp-05"
+        ],
+        "reference_bp_range": [
+          4250.0,
+          4150.0
+        ],
+        "calendar_bp_range": [
+          4450.0,
+          4550.0
+        ]
+      }
+    ],
+    "origin_deposit_id": "ground-A",
+    "scenarios": [
+      {
+        "attribution": "in-situ",
+        "deposit_id": "pit-fill-B",
+        "compatible": true,
+        "blocked_by_relation_ids": [],
+        "supported_relation_ids": [
+          "rel-3"
+        ],
+        "calendar_bp_envelope": [
+          4250.0,
+          4550.0
+        ]
+      },
+      {
+        "attribution": "reworked",
+        "deposit_id": "ground-A",
+        "compatible": true,
+        "blocked_by_relation_ids": [],
+        "supported_relation_ids": [
+          "rel-3"
+        ],
+        "calendar_bp_envelope": [
+          4250.0,
+          4800.0
+        ]
+      }
+    ]
+  },
+  {
+    "fact_id": "sample-2",
+    "kind": "specimen-calibration",
+    "deposit_id": "ground-A",
+    "field_attribution": "in-situ",
+    "effective_attribution": "in-situ",
+    "measured_bp": 4800.0,
+    "tolerance_bp": 60.0,
+    "allowed_reference_bp": [
+      4740.0,
+      4860.0
+    ],
+    "calibration_status": "calibrated",
+    "segments": [
+      {
+        "reference_point_ids": [
+          "rp-06b",
+          "rp-06c"
+        ],
+        "reference_bp_range": [
+          4780.0,
+          4850.0
+        ],
+        "calendar_bp_range": [
+          4750.0,
+          4800.0
+        ]
+      }
+    ]
+  },
+  {
+    "fact_id": "sample-3",
+    "kind": "specimen-calibration",
+    "deposit_id": "layer-C",
+    "field_attribution": "ambiguous",
+    "effective_attribution": "reworked",
+    "measured_bp": 5200.0,
+    "tolerance_bp": 50.0,
+    "allowed_reference_bp": [
+      5150.0,
+      5250.0
+    ],
+    "calibration_status": "calibrated",
+    "segments": [
+      {
+        "reference_point_ids": [
+          "rp-10"
+        ],
+        "reference_bp_range": [
+          5200.0,
+          5200.0
+        ],
+        "calendar_bp_range": [
+          5300.0,
+          5300.0
+        ]
+      }
+    ],
+    "origin_deposit_id": "older-C0",
+    "resolved_by_review_id": "rev-2"
+  }
+]
