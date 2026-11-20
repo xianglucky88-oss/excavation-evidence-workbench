@@ -1,0 +1,103 @@
+{
+  "zones": [
+    {"id": "n1", "access": "public"},
+    {"id": "n2", "access": "restricted"},
+    {"id": "e1", "access": "public"},
+    {"id": "e2", "access": "restricted"},
+    {"id": "s1", "access": "public"},
+    {"id": "s2", "access": "restricted"},
+    {"id": "s3", "access": "public"},
+    {"id": "w1", "access": "public"},
+    {"id": "p1", "access": "public"},
+    {"id": "g1", "access": "public"},
+    {"id": "g2", "access": "restricted"}
+  ],
+  "strips": [
+    {"id": "t-n1", "zone": "n1", "finds": 4},
+    {"id": "t-n2", "zone": "n2", "finds": 3},
+    {"id": "t-e1", "zone": "e1", "finds": 5},
+    {"id": "t-e2", "zone": "e2", "finds": 2},
+    {"id": "t-s1", "zone": "s1", "finds": 6},
+    {"id": "t-s2", "zone": "s2", "finds": 1},
+    {"id": "t-s3", "zone": "s3", "finds": 2},
+    {"id": "t-w1", "zone": "w1", "finds": 8},
+    {"id": "t-p1", "zone": "p1", "finds": 0},
+    {"id": "t-g1", "zone": "g1", "finds": 3},
+    {"id": "t-g2", "zone": "g2", "finds": 4}
+  ],
+  "boundaries": [
+    {
+      "version": "v2023",
+      "zones": [
+        {"name": "north", "small_zones": ["n1", "n2"]},
+        {"name": "east", "small_zones": ["e1"]},
+        {"name": "west", "small_zones": ["w1"]},
+        {"name": "pilot", "small_zones": ["p1"]}
+      ]
+    },
+    {
+      "version": "v2024",
+      "zones": [
+        {"name": "north", "small_zones": ["n1"]},
+        {"name": "east", "small_zones": ["e1", "e2"]},
+        {"name": "west", "small_zones": ["w1"]},
+        {"name": "pilot", "small_zones": ["p1"]}
+      ]
+    },
+    {
+      "version": "v2025",
+      "zones": [
+        {"name": "north", "small_zones": ["n1", "n2"]},
+        {"name": "east", "small_zones": ["e1", "e2"]},
+        {"name": "south", "small_zones": ["s1", "s2", "s3"]},
+        {"name": "south-core", "small_zones": ["s1"]},
+        {"name": "south-rim", "small_zones": ["s2", "s3"]},
+        {"name": "west", "small_zones": ["w1"]},
+        {"name": "pilot", "small_zones": ["p1"]},
+        {"name": "garden", "small_zones": ["g1", "g2"]},
+        {"name": "all", "small_zones": ["n1", "n2", "e1", "e2", "s1", "s2", "s3", "w1", "p1", "g1", "g2"]}
+      ],
+      "groups": [
+        {"name": "east-garden", "zones": ["east", "garden"]}
+      ]
+    }
+  ],
+  "published": [
+    {
+      "id": "release-2023",
+      "boundary": "v2023",
+      "blank_means_zero": true,
+      "rows": [
+        {"zone": "north", "finds": 7},
+        {"zone": "east", "finds": 5},
+        {"zone": "west", "finds": 8},
+        {"zone": "pilot", "finds": null}
+      ]
+    },
+    {
+      "id": "release-2024",
+      "boundary": "v2024",
+      "blank_means_zero": false,
+      "rows": [
+        {"zone": "north", "finds": 4},
+        {"zone": "east", "finds": null},
+        {"zone": "west", "finds": 8},
+        {"zone": "pilot", "finds": 0}
+      ]
+    }
+  ],
+  "draft": {
+    "boundary": "v2025",
+    "rows": [
+      {"zone": "north", "finds": 7},
+      {"zone": "east", "finds": 7},
+      {"zone": "garden", "finds": 7},
+      {"zone": "south", "finds": 9},
+      {"zone": "south-core", "finds": 6},
+      {"zone": "south-rim", "finds": null},
+      {"zone": "west", "finds": 8},
+      {"zone": "pilot", "finds": 0},
+      {"zone": "all", "finds": 38}
+    ]
+  }
+}

@@ -1,0 +1,245 @@
+[
+  {
+    "fact_id": "item:north",
+    "item": "north",
+    "status": "publish",
+    "region_label": "north",
+    "small_zones": [
+      "n1",
+      "n2"
+    ],
+    "value": 7,
+    "public_sources": [],
+    "joint_items": []
+  },
+  {
+    "fact_id": "item:east",
+    "item": "east",
+    "status": "adjusted",
+    "region_label": "east-garden",
+    "small_zones": [
+      "e1",
+      "e2",
+      "g1",
+      "g2"
+    ],
+    "value": 14,
+    "public_sources": [
+      "release-2023"
+    ],
+    "joint_items": []
+  },
+  {
+    "fact_id": "item:garden",
+    "item": "garden",
+    "status": "deferred",
+    "region_label": null,
+    "small_zones": null,
+    "value": null,
+    "public_sources": [
+      "release-2023"
+    ],
+    "joint_items": [
+      "all",
+      "east",
+      "south"
+    ]
+  },
+  {
+    "fact_id": "item:south",
+    "item": "south",
+    "status": "publish",
+    "region_label": "south",
+    "small_zones": [
+      "s1",
+      "s2",
+      "s3"
+    ],
+    "value": 9,
+    "public_sources": [],
+    "joint_items": []
+  },
+  {
+    "fact_id": "item:south-core",
+    "item": "south-core",
+    "status": "publish",
+    "region_label": "south-core",
+    "small_zones": [
+      "s1"
+    ],
+    "value": 6,
+    "public_sources": [],
+    "joint_items": []
+  },
+  {
+    "fact_id": "item:south-rim",
+    "item": "south-rim",
+    "status": "withheld",
+    "region_label": null,
+    "small_zones": null,
+    "value": null,
+    "public_sources": [],
+    "joint_items": []
+  },
+  {
+    "fact_id": "item:west",
+    "item": "west",
+    "status": "publish",
+    "region_label": "west",
+    "small_zones": [
+      "w1"
+    ],
+    "value": 8,
+    "public_sources": [],
+    "joint_items": []
+  },
+  {
+    "fact_id": "item:pilot",
+    "item": "pilot",
+    "status": "publish",
+    "region_label": "pilot",
+    "small_zones": [
+      "p1"
+    ],
+    "value": 0,
+    "public_sources": [],
+    "joint_items": []
+  },
+  {
+    "fact_id": "item:all",
+    "item": "all",
+    "status": "publish",
+    "region_label": "all",
+    "small_zones": [
+      "e1",
+      "e2",
+      "g1",
+      "g2",
+      "n1",
+      "n2",
+      "p1",
+      "s1",
+      "s2",
+      "s3",
+      "w1"
+    ],
+    "value": 38,
+    "public_sources": [],
+    "joint_items": []
+  },
+  {
+    "fact_id": "inference:e2",
+    "zone": "e2",
+    "reader_range": [
+      0,
+      9
+    ],
+    "exact": false,
+    "pre_existing": false,
+    "public_sources": []
+  },
+  {
+    "fact_id": "inference:g2",
+    "zone": "g2",
+    "reader_range": [
+      0,
+      9
+    ],
+    "exact": false,
+    "pre_existing": false,
+    "public_sources": []
+  },
+  {
+    "fact_id": "inference:n2",
+    "zone": "n2",
+    "reader_range": [
+      3,
+      3
+    ],
+    "exact": true,
+    "pre_existing": true,
+    "public_sources": [
+      "release-2023",
+      "release-2024"
+    ]
+  },
+  {
+    "fact_id": "inference:s2",
+    "zone": "s2",
+    "reader_range": [
+      0,
+      3
+    ],
+    "exact": false,
+    "pre_existing": false,
+    "public_sources": []
+  },
+  {
+    "fact_id": "risk:south-rim",
+    "item": "south-rim",
+    "small_zones": [
+      "s2",
+      "s3"
+    ],
+    "determined_value": 3,
+    "public_sources": [
+      "release-2023",
+      "release-2024"
+    ],
+    "joint_items": [
+      "all",
+      "east",
+      "north",
+      "pilot",
+      "south",
+      "south-core",
+      "west"
+    ]
+  },
+  {
+    "fact_id": "summary",
+    "publishable": [
+      {
+        "item": "north",
+        "region_label": "north",
+        "value": 7
+      },
+      {
+        "item": "east",
+        "region_label": "east-garden",
+        "value": 14
+      },
+      {
+        "item": "south",
+        "region_label": "south",
+        "value": 9
+      },
+      {
+        "item": "south-core",
+        "region_label": "south-core",
+        "value": 6
+      },
+      {
+        "item": "west",
+        "region_label": "west",
+        "value": 8
+      },
+      {
+        "item": "pilot",
+        "region_label": "pilot",
+        "value": 0
+      },
+      {
+        "item": "all",
+        "region_label": "all",
+        "value": 38
+      }
+    ],
+    "deferred": [
+      "garden"
+    ],
+    "withheld": [
+      "south-rim"
+    ]
+  }
+]
