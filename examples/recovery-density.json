@@ -1,0 +1,287 @@
+{
+  "taxon": "charred_rice",
+  "samples": [
+    {
+      "id": "S1",
+      "pit": "H1",
+      "processed_liters": 20,
+      "fractions": [
+        {
+          "name": "light",
+          "material_units": [
+            {"unit": "L1"},
+            {"unit": "L2"},
+            {"unit": "L3"}
+          ]
+        },
+        {
+          "name": "heavy",
+          "material_units": [
+            {"unit": "H1a"},
+            {"unit": "H1b"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S2",
+      "pit": "H2",
+      "processed_liters": 6,
+      "fractions": [
+        {
+          "name": "light",
+          "material_units": [
+            {"unit": "L1"}
+          ]
+        },
+        {
+          "name": "heavy",
+          "material_units": [
+            {"unit": "H2a"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S3",
+      "pit": "H2",
+      "processed_liters": 10,
+      "fractions": [
+        {
+          "name": "light",
+          "material_units": [
+            {"unit": "L1"},
+            {"unit": "L2"},
+            {"unit": "L3"},
+            {"unit": "L4"}
+          ]
+        },
+        {
+          "name": "heavy",
+          "material_units": [
+            {"unit": "H3a"},
+            {"unit": "H3b"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S4",
+      "pit": "H3",
+      "processed_liters": 8,
+      "fractions": [
+        {
+          "name": "light",
+          "material_units": [
+            {"unit": "L1"},
+            {"unit": "L2"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S5",
+      "pit": "H3",
+      "processed_liters": 4,
+      "fractions": [
+        {
+          "name": "light",
+          "material_units": [
+            {"unit": "L1"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S6",
+      "pit": "H3",
+      "processed_liters": 5,
+      "fractions": [
+        {
+          "name": "light",
+          "material_units": [
+            {"unit": "L1"}
+          ]
+        },
+        {
+          "name": "heavy",
+          "material_units": [
+            {"unit": "H6a"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S7",
+      "pit": "H4",
+      "processed_liters": 18,
+      "fractions": [
+        {
+          "name": "light",
+          "material_units": [
+            {"unit": "L1"},
+            {"unit": "L2"}
+          ]
+        },
+        {
+          "name": "heavy",
+          "material_units": [
+            {"unit": "H7a"}
+          ]
+        }
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "id": "S1-light-random-1",
+      "sample": "S1",
+      "fraction": "light",
+      "type": "random",
+      "sampling_method": "random_split",
+      "subsample_group": "g1",
+      "proportion": 0.333333,
+      "scope": {"L1": 4}
+    },
+    {
+      "id": "S1-light-random-1-recheck",
+      "sample": "S1",
+      "fraction": "light",
+      "type": "random",
+      "sampling_method": "random_split",
+      "subsample_group": "g1",
+      "proportion": 0.333333,
+      "scope": {"L1": 4},
+      "recheck_of": "S1-light-random-1"
+    },
+    {
+      "id": "S1-light-random-2",
+      "sample": "S1",
+      "fraction": "light",
+      "type": "random",
+      "sampling_method": "random_split",
+      "subsample_group": "g2",
+      "proportion": 0.333333,
+      "scope": {"L2": 3}
+    },
+    {
+      "id": "S1-light-random-3",
+      "sample": "S1",
+      "fraction": "light",
+      "type": "random",
+      "sampling_method": "random_split",
+      "subsample_group": "g3",
+      "proportion": 0.333333,
+      "scope": {"L3": 0}
+    },
+    {
+      "id": "S1-heavy-complete",
+      "sample": "S1",
+      "fraction": "heavy",
+      "type": "complete",
+      "scope": {"H1a": 0, "H1b": 0}
+    },
+    {
+      "id": "S2-light-complete",
+      "sample": "S2",
+      "fraction": "light",
+      "type": "complete",
+      "scope": {"L1": 12}
+    },
+    {
+      "id": "S2-heavy-complete",
+      "sample": "S2",
+      "fraction": "heavy",
+      "type": "complete",
+      "scope": {"H2a": 4}
+    },
+    {
+      "id": "S3-light-random-1",
+      "sample": "S3",
+      "fraction": "light",
+      "type": "random",
+      "sampling_method": "random_split",
+      "subsample_group": "g5",
+      "proportion": 0.25,
+      "scope": {"L1": 2}
+    },
+    {
+      "id": "S3-light-random-1-recheck",
+      "sample": "S3",
+      "fraction": "light",
+      "type": "random",
+      "sampling_method": "random_split",
+      "subsample_group": "g5",
+      "proportion": 0.5,
+      "scope": {"L1": 3, "L2": 1},
+      "recheck_of": "S3-light-random-1"
+    },
+    {
+      "id": "S3-light-random-2",
+      "sample": "S3",
+      "fraction": "light",
+      "type": "random",
+      "sampling_method": "random_split",
+      "subsample_group": "g6",
+      "proportion": 0.5,
+      "scope": {"L2": 1, "L3": 1}
+    },
+    {
+      "id": "S3-light-random-3",
+      "sample": "S3",
+      "fraction": "light",
+      "type": "random",
+      "sampling_method": "random_split",
+      "subsample_group": "g7",
+      "proportion": 0.25,
+      "scope": {"L4": 1}
+    },
+    {
+      "id": "S3-heavy-pending",
+      "sample": "S3",
+      "fraction": "heavy",
+      "type": "pending"
+    },
+    {
+      "id": "S4-light-selective",
+      "sample": "S4",
+      "fraction": "light",
+      "type": "selective",
+      "scope": {"L1": 5}
+    },
+    {
+      "id": "S5-light-pending",
+      "sample": "S5",
+      "fraction": "light",
+      "type": "pending"
+    },
+    {
+      "id": "S6-light-complete",
+      "sample": "S6",
+      "fraction": "light",
+      "type": "complete",
+      "scope": {"L1": 3}
+    },
+    {
+      "id": "S6-heavy-complete",
+      "sample": "S6",
+      "fraction": "heavy",
+      "type": "complete",
+      "scope": {"H6a": 1}
+    },
+    {
+      "id": "S7-light-complete",
+      "sample": "S7",
+      "fraction": "light",
+      "type": "complete",
+      "scope": {"L1": 15, "L2": 12}
+    },
+    {
+      "id": "S7-heavy-complete",
+      "sample": "S7",
+      "fraction": "heavy",
+      "type": "complete",
+      "scope": {"H7a": 0}
+    }
+  ]
+}
