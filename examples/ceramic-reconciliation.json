@@ -1,0 +1,165 @@
+{
+  "registrations": [
+    {
+      "id": "reg-A001",
+      "date": "2026-03-01",
+      "received_date": "2026-03-02",
+      "sherd_id": "S1",
+      "initial_number": "A001",
+      "context": "C7",
+      "bag_id": "BAG-11",
+      "rim": true
+    },
+    {
+      "id": "reg-A002",
+      "date": "2026-03-02",
+      "received_date": "2026-03-03",
+      "sherd_id": "S2",
+      "initial_number": "A002",
+      "context": "C7",
+      "bag_id": "BAG-11",
+      "rim": false
+    },
+    {
+      "id": "reg-A003",
+      "date": "2026-03-03",
+      "received_date": "2026-03-04",
+      "sherd_id": "S3",
+      "initial_number": "A003",
+      "context": "C7",
+      "bag_id": "BAG-12",
+      "rim": false
+    },
+    {
+      "id": "reg-A004",
+      "date": "2026-03-04",
+      "received_date": "2026-03-05",
+      "sherd_id": "S4",
+      "initial_number": "A004",
+      "context": "C8",
+      "bag_id": "BAG-21",
+      "rim": true
+    },
+    {
+      "id": "reg-A005",
+      "date": "2026-03-05",
+      "received_date": "2026-03-06",
+      "sherd_id": "S5",
+      "initial_number": "A005",
+      "context": "C8",
+      "bag_id": "BAG-21",
+      "rim": false
+    },
+    {
+      "id": "reg-A006",
+      "date": "2026-03-05",
+      "received_date": "2026-03-06",
+      "sherd_id": "S6",
+      "initial_number": "A006",
+      "context": "C9",
+      "bag_id": "BAG-31",
+      "rim": true
+    },
+    {
+      "id": "reg-A007",
+      "date": "2026-05-18",
+      "received_date": "2026-05-19",
+      "sherd_id": "S7",
+      "initial_number": "A007",
+      "context": "C9",
+      "bag_id": "BAG-31",
+      "rim": false
+    }
+  ],
+  "renumbers": [
+    {
+      "id": "ren-A101",
+      "date": "2026-04-10",
+      "received_date": "2026-04-10",
+      "sherd_id": "S1",
+      "new_number": "A101"
+    },
+    {
+      "id": "ren-A104",
+      "date": "2026-04-12",
+      "received_date": "2026-04-12",
+      "sherd_id": "S4",
+      "new_number": "A104"
+    },
+    {
+      "id": "ren-A101b",
+      "date": "2026-06-10",
+      "received_date": "2026-06-11",
+      "sherd_id": "S1",
+      "new_number": "A201"
+    }
+  ],
+  "bag_moves": [
+    {
+      "id": "mov-A101-bag14",
+      "date": "2026-04-15",
+      "received_date": "2026-04-16",
+      "sherd_id": "S1",
+      "bag_id": "BAG-14"
+    }
+  ],
+  "group_confirmations": [
+    {
+      "id": "V1",
+      "date": "2026-04-20",
+      "received_date": "2026-04-21",
+      "member_numbers": ["A101", "A002"]
+    },
+    {
+      "id": "V2",
+      "date": "2026-04-22",
+      "received_date": "2026-04-23",
+      "member_numbers": ["A003", "A104", "A005"]
+    },
+    {
+      "id": "V3",
+      "date": "2026-05-20",
+      "received_date": "2026-05-21",
+      "member_numbers": ["A006", "A007"]
+    }
+  ],
+  "group_withdrawals": [
+    {
+      "id": "wd-V3",
+      "date": "2026-05-25",
+      "received_date": "2026-05-26",
+      "group_id": "V3"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "rev-V1-A002",
+      "date": "2026-05-05",
+      "received_date": "2026-05-06",
+      "group_id": "V1",
+      "sherd_number": "A002",
+      "action": "hold",
+      "note": "登记号与拼合记录不符，实物身份保留，冲突片留待复核，其余两片归属维持"
+    }
+  ],
+  "queries": [
+    {
+      "id": "q-original-0515",
+      "mode": "original",
+      "date": "2026-05-15",
+      "received_date": "2026-05-15"
+    },
+    {
+      "id": "q-latest-0630",
+      "mode": "latest",
+      "date": "2026-06-30"
+    }
+  ],
+  "diff_pairs": [
+    {
+      "id": "diff-recheck",
+      "base_query_id": "q-original-0515",
+      "target_query_id": "q-latest-0630"
+    }
+  ]
+}

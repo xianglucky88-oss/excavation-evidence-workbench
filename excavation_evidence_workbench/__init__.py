@@ -1,12 +1,20 @@
 """考古发掘证据"""
 
-from . import stratigraphic_order, dating_evidence, ceramic_counts, flotation_yield, fieldwalking_density
+from . import (
+    ceramic_counts,
+    ceramic_reconciliation,
+    dating_evidence,
+    fieldwalking_density,
+    flotation_yield,
+    stratigraphic_order,
+)
 from .contract import Row
 
 PIPELINES = {
     "stratigraphic-order": stratigraphic_order.build_facts,
     "dating-evidence": dating_evidence.build_facts,
     "ceramic-counts": ceramic_counts.build_facts,
+    "ceramic-reconciliation": ceramic_reconciliation.build_facts,
     "flotation-yield": flotation_yield.build_facts,
     "fieldwalking-density": fieldwalking_density.build_facts,
 }
